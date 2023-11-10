@@ -1,12 +1,19 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
-import { Typography } from '@mui/material';
+import { Typography, Button } from '@mui/material';
 
 function MyButton() {
+  const fetchData = async () => {
+    try {
+      const response = await fetch('http://localhost:3001/api/data');
+      const data = await response.json();
+      console.log('Data from the backend:', data);
+    } catch (error) {
+      console.error('Error fetching data:', error);
+    }
+  };
   return (
-    <button>
-      I'm a button
-    </button>
+    <Button variant="contained" onClick={fetchData}>My Button</Button>
   );
 }
 
@@ -14,8 +21,9 @@ function App() {
   return (
     <div>
       <Typography variant="h1">Hello World</Typography>
-      <MyButton />
+      <MyButton/>
     </div>
+
     // <div className="App">
     //   <header className="App-header">
     //     <img src={logo} className="App-logo" alt="logo" />
