@@ -5,7 +5,7 @@ import { Typography, Button } from '@mui/material';
 function MyButton() {
   const fetchData = async () => {
     try {
-      const response = await fetch('http://localhost:3001/api/data');
+      const response = await fetch('/api');
       const data = await response.json();
       console.log('Data from the backend:', data);
     } catch (error) {
