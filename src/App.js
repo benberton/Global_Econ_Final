@@ -39,7 +39,8 @@ function RevealingContent() {
 
   return (
     <div>
-      <ButtonGroup>
+      <Container align="center">
+        <ButtonGroup size='large'>
         <Button
           variant={isProblemVisible ? 'contained' : 'outlined'}
           onClick={handleProblemButtonClick}
@@ -53,9 +54,12 @@ function RevealingContent() {
         >
           Proposed Solutions
         </Button>
-      </ButtonGroup>
+        </ButtonGroup>
+      </Container>
+      
 
       {isProblemVisible && (
+        
         <div>
           <Typography variant="h4" gutterBottom>
             Revealed Content for The Problem
@@ -90,8 +94,7 @@ function App() {
         MENA EDUCATION
       </Typography>
       <Typography variant="body1" paragraph>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante
-        dapibus diam.
+        'MENA' refers to the Middle East and Norther Africa. 
       </Typography>
       <Typography variant="body1" paragraph>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante
