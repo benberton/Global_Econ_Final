@@ -9,19 +9,19 @@ import {
 } from "@mui/material";
 import SendIcon from "@mui/icons-material/Send";
 
-const messages = [
-  { id: 1, text: "Hi there!", sender: "bot" },
-  { id: 2, text: "Hello!", sender: "user" },
-  { id: 3, text: "How can I assist you today?", sender: "bot" },
-];
 
 const ChatUI = () => {
   const [input, setInput] = React.useState("");
+  const [messages, setChatMessages] = React.useState([
+    { id: 1, text: "Hi there!", sender: "bot" },
+    { id: 2, text: "Hello!", sender: "user" },
+    { id: 3, text: "How can I assist you today?", sender: "bot" },
+  ]);
 
   const handleSend = async () => {
     if (input.trim() !== "") {
         try {
-            const response = await fetch('/message', {
+            const response = await fetch('/api/send-message', {
             method: 'POST',
             headers: {
             'Content-Type': 'application/json',
@@ -31,11 +31,12 @@ const ChatUI = () => {
 
             const data = await response.json();
             console.log('Message sent successfully:', data);
+            // Update chatMessages with the new data
+            setChatMessages(data.chatMessages);
             setInput("");
         } catch (error) {
         console.error('Error sending message:', error);
         }
-        console.log(input);
         setInput("");
     }
   };

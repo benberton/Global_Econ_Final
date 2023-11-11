@@ -16,24 +16,18 @@ app.get("/api", (req, res) => {
     res.json({ message: "Hello from server!" });
   });
 
+let idNum = 3
 let chatMessages = [
     { id: 1, text: "Hi there!", sender: "bot" },
     { id: 2, text: "Hello!", sender: "user" },
     { id: 3, text: "How can I assist you today?", sender: "bot" },
 ];
 
-app.post('/message', (req, res) => {
+app.post('/api/send-message', (req, res) => {
     const { message } = req.body; 
-    console.log(message)
+    chatMessages.push({id: (idNum + 1), text: message, sender:"user"})
+    idNum += 1
     res.json({"chatMessages": chatMessages})
-    // res.json({"message": message})
-    
-    // if (Array.isArray(messages)) {
-    //     chatMessages = [...chatMessages, ...messages];
-    //     res.json({ success: true, messages: chatMessages });
-    // } else {
-    //     res.status(400).json({ success: false, error: 'Invalid request body' });
-    // }
 });
 
 app.listen(PORT, () => {
