@@ -2,23 +2,69 @@
 import './App.css';
 import React, { useState } from 'react';
 import { Typography, Button, Container, ButtonGroup} from '@mui/material';
-
+import ChatUI from './chat';
 
 
 // function MyButton() {
-//   const fetchData = async () => {
-//     try {
-//       const response = await fetch('/api');
-//       const data = await response.json();
-//       console.log('Data from the backend:', data);
-//     } catch (error) {
-//       console.error('Error fetching data:', error);
-//     }
+  // const fetchData = async () => {
+  //   try {
+  //     const response = await fetch('/api');
+  //     const data = await response.json();
+  //     console.log('Data from the backend:', data);
+  //   } catch (error) {
+  //     console.error('Error fetching data:', error);
+  //   }
 //   };
 //   return (
 //     <Button variant="contained" onClick={fetchData}>My Button</Button>
 //   );
 // }
+
+function ProblemContent() {
+  return(
+    <Container sx={{ padding: '20px' }}>
+      <Typography variant="h4" gutterBottom>
+        Challenges to Education in the MENA Region
+      </Typography>
+      
+      <img
+        src="https://setav.org/en/assets/uploads/2019/12/mena-region.jpg"
+        alt="MENA Region"
+        style={{ maxWidth: '100%', marginBottom: '20px' }}
+      />
+
+      <Typography variant="body1">
+        The MENA region has faced numerous challenges in ensuring access to quality education for all its residents.
+      </Typography>
+
+      <Typography variant="h5" gutterBottom>
+        Conflict and Instability
+      </Typography>
+      <Typography variant="body1">
+        Ongoing conflicts and political instability in several countries have disrupted educational systems,
+        leaving a significant number of children out of school.
+      </Typography>
+
+      <Typography variant="h5" gutterBottom>
+        Gender Inequality in Education
+      </Typography>
+      <Typography variant="body1">
+        Gender disparities persist in education, with adolescent girls being 1.5 times more likely to be out of
+        school in lower secondary education. Early marriages also contribute to hindering girls' education in the region.
+      </Typography>
+
+      <Typography variant="h5" gutterBottom>
+        Quality of Education
+      </Typography>
+      <Typography variant="body1">
+        A notable concern is the perceived inadequacy of the education system in preparing youth for their future.
+        Two-thirds of youth in the Levant feel that the education system is not adequately equipping them with the necessary skills.
+      </Typography>
+
+      {/* Add more sections about specific challenges and potential solutions as needed */}
+    </Container>
+  );
+}
 
 
 
@@ -59,16 +105,7 @@ function RevealingContent() {
       
 
       {isProblemVisible && (
-        
-        <div>
-          <Typography variant="h4" gutterBottom>
-            Revealed Content for The Problem
-          </Typography>
-          <Typography variant="body1">
-            This is the content that is revealed when "The Problem" button is clicked.
-          </Typography>
-          {/* Add more content as needed */}
-        </div>
+        <ProblemContent/>
       )}
 
       {areSolutionsVisible && (
@@ -93,14 +130,15 @@ function App() {
       <Typography variant="h1" align="center" gutterBottom>
         MENA EDUCATION
       </Typography>
-      <Typography variant="body1" paragraph>
-        'MENA' refers to the Middle East and Norther Africa. 
-      </Typography>
-      <Typography variant="body1" paragraph>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante
-        dapibus diam.
-      </Typography>
       <RevealingContent/>
+      <Container 
+      style={
+        { 
+         width: '90%',
+         height: '100px',
+         }}>
+        <ChatUI/>
+      </Container>
     </Container>
 
     // <div className="App">
