@@ -11,12 +11,20 @@ import SendIcon from "@mui/icons-material/Send";
 
 
 const ChatUI = () => {
-  const [input, setInput] = React.useState("");
-  const [messages, setChatMessages] = React.useState([
-    { id: 1, text: "Hi there!", sender: "bot" },
-    { id: 2, text: "Hello!", sender: "user" },
-    { id: 3, text: "How can I assist you today?", sender: "bot" },
-  ]);
+    const [input, setInput] = React.useState("");
+    const [messages, setChatMessages] = React.useState([
+    ]);
+
+   const fetchData = async () => {
+        try {
+        const response = await fetch('/get-messeges');
+        const data = await response.json();
+        setChatMessages(data.chatMessages);
+        } catch (error) {
+        console.error('Error fetching data:', error);
+        }
+    };
+    fetchData()
 
   const handleSend = async () => {
     if (input.trim() !== "") {
@@ -48,10 +56,10 @@ const ChatUI = () => {
   return (
     <Box
       sx={{
-        height: "50vh",
+        height: "65vh",
         display: "flex",
         flexDirection: "column",
-        bgcolor: "grey.200",
+        bgcolor: "light grey",
       }}
     >
       <Box sx={{ flexGrow: 1, overflow: "auto", p: 2 }}>
@@ -113,5 +121,6 @@ const Message = ({ message }) => {
     </Box>
   );
 };
+
 
 export default ChatUI;

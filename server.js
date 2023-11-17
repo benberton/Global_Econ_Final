@@ -1,4 +1,3 @@
-// server/index.js
 
 const express = require("express");
 const bodyParser = require('body-parser');
@@ -14,13 +13,17 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get("/api", (req, res) => {
     res.json({ message: "Hello from server!" });
-  });
+});
+
+app.get("/get-messeges", (req, res) => {
+    res.json({"chatMessages": chatMessages})
+});
 
 let idNum = 3
 let chatMessages = [
-    { id: 1, text: "Hi there!", sender: "bot" },
-    { id: 2, text: "Hello!", sender: "user" },
-    { id: 3, text: "How can I assist you today?", sender: "bot" },
+    { id: 1, text: "It would be interesting to see how income playes a role!", sender: "bot" },
+    { id: 2, text: "Yea that would be!", sender: "user" },
+    { id: 3, text: "Cool", sender: "bot" },
 ];
 
 app.post('/api/send-message', (req, res) => {
