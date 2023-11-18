@@ -64,13 +64,11 @@ function ProblemContent() {
       </Typography>
       <Typography variant="body1" style={{ marginBottom: '2vh', lineHeight: '2', fontSize: '2.5vh' }}>
         There exists a significant mismatch between the skills acquired by individuals in the MENA region and the requirements
-        of the labor market. Those who enter the labor market often lack essential life skills such as creativity, critical thinking,
-        problem-solving, and communication. Employers report a widespread shortage of these crucial skills. This gap can be attributed,
-        in part, to the limited opportunities for gaining work experience before leaving school. Notably, every additional year of schooling
-        in the region adds only around 5.4 percent to earnings, compared to the world average of 7 percent. Education systems are struggling
-        to prepare the youth for the workplace, and labor markets are not generating the needed jobs. Youth unemployment rates (15-24 years)
-        in MENA are the highest globally, with close to one-third of youth in North Africa and more than one out of five youth in the Arab States
-        estimated to be unemployed as of 2018.
+        of the labor market. This gap can be attributed, in part, to the limited opportunities for gaining work experience before
+         leaving school. Notably, every additional year of schooling in the region adds only around 5.4 percent to earnings, compared to the 
+        world average of 7 percent. Education systems are struggling to prepare the youth for the workplace, and labor markets are not generating
+         the needed jobs. Youth unemployment rates (15-24 years) in MENA are the highest globally, with close to one-third of youth in North Africa
+          and more than one out of five youth in the Arab States estimated to be unemployed as of 2018 <i>(Unicef)</i>
       </Typography>
   </Container>
   );
@@ -148,6 +146,10 @@ function SourcesSection() {
           </li>
           <li>
             Hall, Stephen, et al. <i>Reimagining Education in Menap.</i> McKinsey &amp; Company, McKinsey &amp; Company, 26 July 2022. Retrieved from: <a href='www.mckinsey.com/industries/education/our-insights/reimagining-education-in-menap' target="_blank" rel="noopener noreferrer">www.mckinsey.com/industries/education/our-insights/reimagining-education-in-menap</a>
+          </li>
+          <li>
+          Education. (n.d.). <i>Education</i> UNICEF Middle East and North Africa. Retrieved from: <a href='https://www.unicef.org/mena/education' target="_blank" rel="noopener noreferrer">https://www.unicef.org/mena/education</a>
+
           </li>
         </ul>
       </Typography>
