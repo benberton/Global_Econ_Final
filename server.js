@@ -21,9 +21,8 @@ app.get("/get-messeges", (req, res) => {
 
 let idNum = 3
 let chatMessages = [
-    { id: 1, text: "It would be interesting to see how income playes a role!", sender: "bot" },
+    { id: 1, text: "It would be interesting to see how income playes a role in education.", sender: "bot" },
     { id: 2, text: "Yea that would be!", sender: "user" },
-    { id: 3, text: "Cool", sender: "bot" },
 ];
 
 app.post('/api/send-message', (req, res) => {

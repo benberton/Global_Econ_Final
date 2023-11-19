@@ -17,7 +17,7 @@ function ProblemContent() {
           style={{ maxWidth: '100%', height: 'auto', marginTop: '1vh', marginBottom: '1vh' }}
         />
 
-      <Typography variant="body1" style={{ marginBottom: '2vh', lineHeight: '2', fontSize: '2.5vh' }}>
+      <Typography variant="body1" style={{ marginBottom: '2vh', lineHeight: '2', fontSize: '20px' }}>
         The MENA region has faced numerous challenges in ensuring access to quality education for all its residents. Nearly 
         half the population of the region is under the age of 24. One in every five children in the region is out of school, 
         and the literacy rate is the lowest in the world <i>(Unicef)</i>. These challenges have had profound effects on the development and 
@@ -27,7 +27,7 @@ function ProblemContent() {
       <Typography variant="h5" fontWeight='bold' gutterBottom>
         Conflict and Political Instability
       </Typography>
-      <Typography variant="body1" style={{ marginBottom: '2vh', lineHeight: '2', fontSize: '2.5vh' }}>
+      <Typography variant="body1" style={{ marginBottom: '2vh', lineHeight: '2', fontSize: '20px' }}>
         Ongoing conflicts and political instability in several countries have disrupted educational systems,
         leaving a significant number of children out of school. Armed conflicts in Syria, Iraq, and Yemen have left 
         over 14 million students without any education <i>(Bonatto)</i>. This disruption not only hampers the immediate
@@ -36,19 +36,21 @@ function ProblemContent() {
       </Typography>
 
       <Typography variant="h5" fontWeight='bold' gutterBottom>
-        Insufficient Infrastructure
+        Insufficient Infrastructure and Internet Connectivity
       </Typography>
-      <Typography variant="body1" style={{ marginBottom: '2vh', lineHeight: '2', fontSize: '2.5vh' }}>
+      <Typography variant="body1" style={{ marginBottom: '2vh', lineHeight: '2', fontSize: '20px' }}>
         Many areas in the MENA region suffer from a lack of educational infrastructure, including schools, libraries,
         and technology. This insufficient infrastructure makes it challenging for students, especially those in
         remote areas, to access quality education. The digital divide further exacerbates this issue, with the widespread 
         lack of digital literacy limiting opportunities for those without access to modern educational tools <i>(Hall)</i>.
+        Only 280 million people in the region, 45% of the population, are connected to mobile internet. For countries like Sudan and Yemen, 
+        internet penetration is lower than 30%. Internet connectivity also remains a challenge in rural and conflict-hit areas, as well as in urban areas <i>(Bonatto)</i>.
       </Typography>
 
       <Typography variant="h5" fontWeight='bold' gutterBottom>
         Socioeconomic Disparities
       </Typography>
-      <Typography variant="body1" style={{ marginBottom: '2vh', lineHeight: '2', fontSize: '2.5vh' }}>
+      <Typography variant="body1" style={{ marginBottom: '2vh', lineHeight: '2', fontSize: '20px' }}>
         Socioeconomic disparities play a significant role in limiting access to education in the MENA region.
         Families with lower incomes often struggle to afford educational expenses, including books, uniforms,
         and transportation, perpetuating cycles of poverty. Addressing these disparities is crucial for empowering
@@ -62,7 +64,7 @@ function ProblemContent() {
       <Typography variant="h5" fontWeight='bold' gutterBottom>
         Mismatch Between Skills and Labor Market Requirements
       </Typography>
-      <Typography variant="body1" style={{ marginBottom: '2vh', lineHeight: '2', fontSize: '2.5vh' }}>
+      <Typography variant="body1" style={{ marginBottom: '2vh', lineHeight: '2', fontSize: '20px' }}>
         There exists a significant mismatch between the skills acquired by individuals in the MENA region and the requirements
         of the labor market. This gap can be attributed, in part, to the limited opportunities for gaining work experience before
          leaving school. Notably, every additional year of schooling in the region adds only around 5.4 percent to earnings, compared to the 
@@ -88,31 +90,62 @@ function ProposedSolutionsContent() {
         alt="Map of MENA Region depicting the challenges in education"
         style={{ maxWidth: '100%', height: 'auto', marginTop: '1vh', marginBottom: '1vh' }}
       />
-    <Typography fontStyle="italic" variant="body1" textAlign='center' style={{ marginBottom: '2vh'}}>
+      <Typography fontStyle="italic" variant="body1" textAlign='center' style={{ marginBottom: '2vh'}}>
         Map of the MENA Region (Middle East & North Africa)
       </Typography>
 
+      <Typography variant="body1" style={{ marginBottom: '2vh', lineHeight: '2', fontSize: '20px' }}>
+        Implementing effective solutions is crucial to overcome the challenges faced by the education sector in the MENA region.
+        Addressing these issues requires a comprehensive approach that involves various stakeholders, including governments,
+        NGOs, and communities.
+      </Typography>
+
       <Typography variant="h5" fontWeight='bold' gutterBottom>
-        Investment in Infrastructure
+        The Role of Technology
       </Typography>
-      <Typography variant="body1" style={{ marginBottom: '2vh', lineHeight: '2', fontSize: '2.5vh' }}>
-        Allocating resources to improve and build educational infrastructure, including schools, libraries, and technology, to enhance accessibility.
+      <Typography variant="body1" style={{ marginBottom: '2vh', lineHeight: '2', fontSize: '20px' }}>
+        Technology is a crucial catalyst for addressing education challenges in the MENA region. Existing platforms, combining instruction, 
+        assessment, and real-time feedback, offer innovative solutions. Ministries of education in the MENAP region have actively utilized 
+        platforms like MS Teams, Edraak, Telmid TICE, and Mzeed to ensure continuity in learning during the pandemic. 
+        Focusing on teacher-centric technologies, such as data projection, alongside student-centric approaches, 
+        like providing computers with internet access, has proven most effective. This blended approach enhances 
+        engagement and empowers students to work independently. Improving teacher-focused technologies is essential, 
+        with a 75 percent increase in digital tools anticipated to meet future personalized learning needs <i>(Hall)</i>. 
+        Beyond academics, adopting a whole-child education approach is emphasized. A motivated mindset is identified 
+        as a significant predictor of success, surpassing an orientation to subject matter. The 2018 PISA survey highlights 
+        dimensions like motivation, instrumental motivation, a sense of belonging, and test anxiety as crucial components contributing 
+        to a holistic educational experience <i>(Hall)</i>.
       </Typography>
 
-      <Typography variant="body1" style={{ marginBottom: '2vh', lineHeight: '2', fontSize: '2.5vh' }}>
-        In addressing the challenges to education in the MENA region, several proposed solutions and initiatives have been put forward.
 
-        <strong>Investment in Infrastructure:</strong> Allocating resources to improve and build educational infrastructure, including schools, libraries, and technology, to enhance accessibility.
+      <Typography variant="h5" fontWeight='bold' gutterBottom>
+        Investing in Education Infrastructure
+      </Typography>
+      <Typography variant="body1" style={{ marginBottom: '2vh', lineHeight: '2', fontSize: '20px' }}>
+        Womens' empowerment is key to education in the MENA region. The solution revolves around strategic educational interventions, 
+        with a particular focus on initiatives like Education For Employment. These programs aim to equip women with crucial skills, offering pathways for 
+        self-employment in regions facing challenges such as limited job opportunities. Education This not only addresses 
+        immediate skills gaps but also challenges societal norms, fostering a supportive environment for women. By providing targeted education 
+        and training, these initiatives contribute to breaking down barriers to women's participation in the workforce <i>(Abdallah)</i>.
+      </Typography>
 
-        <strong>Teacher Training Programs:</strong> Implementing comprehensive training programs for educators to ensure they are well-equipped to provide quality education.
+      <Typography variant="h5" fontWeight='bold' gutterBottom>
+        Promoting Inclusive Policies
+      </Typography>
+      <Typography variant="body1" style={{ marginBottom: '2vh', lineHeight: '2', fontSize: '20px' }}>
+        Governments and policymakers can play a crucial role in promoting inclusive policies that address socioeconomic
+        disparities. This includes implementing financial aid programs, scholarships, and initiatives to support families
+        with lower incomes. Additionally, promoting equal opportunities for girls and women in education is vital for
+        achieving sustainable development.
+      </Typography>
 
-        <strong>Community Engagement:</strong> Fostering community involvement and awareness to promote the importance of education and encourage enrollment.
-
-        <strong>Curriculum Enhancement:</strong> Reviewing and enhancing educational curricula to better align with the needs of the job market and equip students with relevant skills.
-
-        <strong>Gender Equality Initiatives:</strong> Implementing programs to address gender disparities, such as promoting girls' education and combating early marriages.
-
-        <strong>Government Policies:</strong> Formulating and implementing effective education policies to ensure inclusivity and address the specific needs of diverse communities.
+      <Typography variant="h5" fontWeight='bold' gutterBottom>
+        Aligning Education with Labor Market Needs
+      </Typography>
+      <Typography variant="body1" style={{ marginBottom: '2vh', lineHeight: '2', fontSize: '20px' }}>
+        To reduce the mismatch between skills and labor market requirements, there is a need for closer collaboration
+        between educational institutions and industries. Vocational training programs, internships, and apprenticeships
+        can provide students with practical skills and work experience, better preparing them for the workforce.
       </Typography>
     </Container>
   );
@@ -125,7 +158,7 @@ function SourcesSection() {
         Sources
       </Typography>
 
-      <Typography variant="body1" style={{ marginBottom: '2vh', lineHeight: '2', fontSize: '2.5vh' }}>
+      <Typography variant="body1" style={{ marginBottom: '2vh', lineHeight: '2', fontSize: '20px' }}>
         The information presented is based on a combination of research studies, reports, and articles. Some key sources include:
 
         <ul>
