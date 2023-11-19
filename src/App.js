@@ -20,7 +20,7 @@ function ProblemContent() {
       <Typography variant="body1" style={{ marginBottom: '2vh', lineHeight: '2', fontSize: '20px' }}>
         The MENA region has faced numerous challenges in ensuring access to quality education for all its residents. Nearly 
         half the population of the region is under the age of 24. One in every five children in the region is out of school, 
-        and the literacy rate is the lowest in the world <i>(Unicef)</i>. These challenges have had profound effects on the development and 
+        and the literacy rate is concerningly low <i>(Unicef)</i>. These challenges have had profound effects on the development and 
         well-being of the region's youth, impacting their opportunities for personal growth and future success.
       </Typography>
 
@@ -105,8 +105,8 @@ function ProposedSolutionsContent() {
       </Typography>
       <Typography variant="body1" style={{ marginBottom: '2vh', lineHeight: '2', fontSize: '20px' }}>
         Technology is a crucial catalyst for addressing education challenges in the MENA region. Existing platforms, combining instruction, 
-        assessment, and real-time feedback, offer innovative solutions. Ministries of education in the MENAP region have actively utilized 
-        platforms like MS Teams, Edraak, Telmid TICE, and Mzeed to ensure continuity in learning during the pandemic. 
+        assessment, and real-time feedback, offer innovative solutions. Ministries of education in the MENA region have actively utilized 
+        platforms like MS Teams, Edraak, Telmid TICE, and Mzeed to ensure continuity in learning. 
         Focusing on teacher-centric technologies, such as data projection, alongside student-centric approaches, 
         like providing computers with internet access, has proven most effective. This blended approach enhances 
         engagement and empowers students to work independently. Improving teacher-focused technologies is essential, 
@@ -127,16 +127,6 @@ function ProposedSolutionsContent() {
         self-employment in regions facing challenges such as limited job opportunities. Education This not only addresses 
         immediate skills gaps but also challenges societal norms, fostering a supportive environment for women. By providing targeted education 
         and training, these initiatives contribute to breaking down barriers to women's participation in the workforce <i>(Abdallah)</i>.
-      </Typography>
-
-      <Typography variant="h5" fontWeight='bold' gutterBottom>
-        Promoting Inclusive Policies
-      </Typography>
-      <Typography variant="body1" style={{ marginBottom: '2vh', lineHeight: '2', fontSize: '20px' }}>
-        Governments and policymakers can play a crucial role in promoting inclusive policies that address socioeconomic
-        disparities. This includes implementing financial aid programs, scholarships, and initiatives to support families
-        with lower incomes. Additionally, promoting equal opportunities for girls and women in education is vital for
-        achieving sustainable development.
       </Typography>
 
       <Typography variant="h5" fontWeight='bold' gutterBottom>
@@ -279,7 +269,7 @@ function App() {
     <Container>
       <br/>
       <Typography fontWeight='bold' variant="h2" align="center" gutterBottom>
-        Eduction in the MENA Region
+        Education in the MENA Region
       </Typography>
       <Container align='center'>
         <br/>
